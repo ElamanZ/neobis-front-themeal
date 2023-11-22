@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eeeded;
+  font-family: "Cardo", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+
+a {
+  text-decoration: none;
+  color: unset;
+
+}
+
+h1,
+h2{
+  font-size: 28px;
+  font-weight: 600;
+}
+section {
+  padding: 60px 0px;
+}
+
+@media only screen and (max-width: 768px){
+  section {
+    padding: 40px 0;
+  }
+
+  h1,h2 {
+    font-size: 1.5rem;
+  }
+}

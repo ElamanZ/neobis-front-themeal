@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cardo:ital@0;1&display=swap');
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 *{
   margin:0;
   padding:0;
@@ -10,14 +14,9 @@ body {
   background: #eeeded;
   font-family: "Cardo", sans-serif;
 }
+.container {
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-
+}
 a {
   text-decoration: none;
   color: unset;

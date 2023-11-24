@@ -28,8 +28,6 @@ function FoodSearch(props) {
         dispatch(getFoodSearch(value));
     }, [dispatch, value]);
 
-    console.log(foodSearch);
-    const meal = foodSearch.meals
     return (
         <div>
 
@@ -52,9 +50,9 @@ function FoodSearch(props) {
             </form>
 
             {
-                foodSearch.meals.map(meal =>
-                    <div>
-                        <Link to={`/${''}`}>
+                foodSearch && foodSearch.meals && Array.isArray(foodSearch.meals) && foodSearch.meals.map((meal, key) =>
+                    <div key={key}>
+                        <Link to={`/${meal.idMeal}`}>
                             <div className={style.mealsBlock}>
                                 <img className={style.mealImg} src={meal.strMealThumb} alt=""/>
                                 <div>

@@ -7,7 +7,7 @@ function Footer(props) {
     return (
         <div className={style.footer}>
             <div className={style.footerText}>
-                <h2>Исследуйте, готовьте, наслаждайтесь.</h2>
+                <p>Исследуйте, готовьте, наслаждайтесь.</p>
             </div>
             <div className={style.footerLinks}>
                 <a href="https://www.linkedin.com/in/elaman-zarlykov-a91227237/" target="_blank" rel="noopener noreferrer" className={style.footerLinks_linkedin}>

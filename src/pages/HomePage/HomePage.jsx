@@ -1,9 +1,10 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import style from './homePage.module.css';
 import {useDispatch, useSelector} from 'react-redux'
 import {getRandomFoods} from "../../store/foodSlice";
 import loadingGif from '../../assets/images/PulseLoading.gif'
 import {Link} from "react-router-dom";
+import FoodSearch from "../../components/FoodSearch/FoodSearch";
 
 function HomePage(props) {
     const dispatch = useDispatch()
@@ -13,7 +14,9 @@ function HomePage(props) {
         dispatch(getRandomFoods())
     }, []);
 
-    console.log('VOOT', food)
+
+
+
 
     const mealPresent = food && food.meals && food.meals.length > 0;
     const meal = mealPresent ? food.meals[0] : null;
@@ -41,13 +44,7 @@ function HomePage(props) {
                             </div>
                         </div>
 
-                        <div>
-                            <h2 className={style.searchTitle}>Find your Meal</h2>
-                            <form className={style.searchBlock}>
-                                <input className={style.searchInput} type="text" placeholder='Find your meal'/>
-                                <button className={style.searchBtn} type='submit'>Search</button>
-                            </form>
-                        </div>
+                        <FoodSearch/>
 
                     </div>
 

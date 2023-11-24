@@ -1,18 +1,20 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import style from '../FoodDetailsPage/foodDetails.module.css'
-import {Link} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 
 import {useDispatch, useSelector} from "react-redux";
-import {getFoodsDetails} from "../../store/foodDetailSlice";
+import foodDetailReducer, {getFoodsDetails} from "../../store/foodDetailSlice";
 import loadingGif from "../../assets/images/PulseLoading.gif";
 
 function FoodDetailsPage(props) {
 
     const dispatch = useDispatch()
-    const {food, error} = useSelector(state => state.randomFoodReducer)
+    const {food} = useSelector(state => state.foodDetailReducer)
 
+
+    const {id} = useParams()
     useEffect(() => {
-        dispatch(getFoodsDetails())
+        dispatch(getFoodsDetails(id))
     }, []);
 
 

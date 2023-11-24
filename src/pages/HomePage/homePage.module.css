@@ -86,7 +86,7 @@
     padding: 6px 12px;
     transition: all .15s;
     width: 100%;
-    font-size: 22px;
+    font-size: 18px;
 }
 .searchBtn{
     background: #d49726;
@@ -95,9 +95,29 @@
     color: #fff;
     cursor: pointer;
     font-weight: 700;
+    font-size: 18px;
     height: 100%;
     position: absolute;
     right: 0;
     width: 100px;
+}
+.mealsBlock {
+    align-items: center;
+    display: flex;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+.mealImg {
+    flex-basis: 20%;
+    border-radius: 10px;
+    box-shadow: 10px 12px 29px -14px rgba(0,0,0,.75);
+    object-fit: cover;
+    width: 50%;
+}
+.mealTitle {
+    font-size: 30px;
+}
+.mealInfo {
+    font-size: 24px;
 }
 

@@ -23,12 +23,12 @@ export const getFoodsDetails = createAsyncThunk(
 const foodDetailsSlice = createSlice({
     name: 'foodDetailsSlice',
     initialState: {
-        food: [],
+        food: {},
         error: ''
     },
     extraReducers: builder =>  {
         builder.addCase(getFoodsDetails.fulfilled, (state, action) => {
-            state.randomFood = action.payload
+            state.food = action.payload
         })
         builder.addCase(getFoodsDetails.rejected, (state, action) => {
             state.error = action.payload

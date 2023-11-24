@@ -35,13 +35,13 @@
     1. Поиск рецептов:
     Введите ключевые слова или названи бллюда в поле поиска, затем нажмите "Search" для получения списка рецептов по вашему запросу.
 
-    ![image](https://github.com/ElamanZ/neobis-front-themeal/assets/110537470/8dc99b8b-4732-43e1-8acc-2b17b6cbc9d6)
+![image](https://github.com/ElamanZ/neobis-front-themeal/assets/110537470/8dc99b8b-4732-43e1-8acc-2b17b6cbc9d6)
 
 
     2. Отображение рецепта:
     На второй странице при выборе блюда будет выведен рецепт с ингредиентами и ссылкой на видеорецепт на YouTube.
     
-    ![image](https://github.com/ElamanZ/neobis-front-themeal/assets/110537470/c34eaf9a-cc8a-43a7-bc15-ba99233254e8)
+![image](https://github.com/ElamanZ/neobis-front-themeal/assets/110537470/c34eaf9a-cc8a-43a7-bc15-ba99233254e8)
 
 
 **Технологии**

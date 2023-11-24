@@ -1,70 +1,62 @@
-# Getting Started with Create React App
+# ReadMe для проекта "The Meal"
+![image](https://github.com/ElamanZ/neobis-front-themeal/assets/110537470/db54c4fe-882f-49c7-bbeb-2f02526fb04c)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Описание проекта
 
-## Available Scripts
+Это веб-приложение "The Meal", предоставляющее возможность поиска рецептов блюд.
+Пользователь может вводить ключевые слова или названия блюд, чтобы найти соответствующие рецепты.
+Кроме того, при выборе блюда на второй странице отображается рецепт с указанием ингредиентов и ссылкой на видеорецепт на YouTube, где готовят данное блюдо.
 
-In the project directory, you can run:
+## Установка
 
-### `npm start`
+Чтобы запустить этот проект локально на своем компьютере, выполните одно из этих вариантов:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**1 - Вариант:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+        1. Скачайте проект: [Скачать архив] 
+  
+        2. Распакуйте архив: Распакуйте zip-архив на вашем компьютере.
+  
+        3. Запустите проект:
+            - Откройте терминал (командную строку).
+            - Перейдите в папку с проектом (`cd путь_к_папке_проекта`).
+            - Установите зависимости: `npm install`.
+            - Запустите проект: `npm start`. Это откроет проект в вашем браузере по адресу `http://localhost:3000/`.
 
-### `npm test`
+**2 - Вариант:**  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+        1. Склонируйте репозиторий: используя команду в терминале проекта `git clone` + [ссылка на репозиторий]
+        2. Установите зависимости: `npm install`
+        3. Запустите проект: `npm start`. Это откроет проект в вашем браузере по адресу `http://localhost:3000/`
 
-### `npm run build`
+## Использование
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    1. Поиск рецептов:
+    Введите ключевые слова или названи бллюда в поле поиска, затем нажмите "Search" для получения списка рецептов по вашему запросу.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ![image](https://github.com/ElamanZ/neobis-front-themeal/assets/110537470/8dc99b8b-4732-43e1-8acc-2b17b6cbc9d6)
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    2. Отображение рецепта:
+    На второй странице при выборе блюда будет выведен рецепт с ингредиентами и ссылкой на видеорецепт на YouTube.
+    
+    ![image](https://github.com/ElamanZ/neobis-front-themeal/assets/110537470/c34eaf9a-cc8a-43a7-bc15-ba99233254e8)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+**Технологии**
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    HTML
+    CSS
+    JavaScript
+    React
+    Redux-Toolkit
 
-## Learn More
+## Автор
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Developer: Elaman Zarlykov
+   
+   Gmail: z.elaman699@gmail.com
+   
+   GitHub: https://github.com/ElamanZ
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

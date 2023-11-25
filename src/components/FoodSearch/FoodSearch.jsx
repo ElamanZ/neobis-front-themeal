@@ -8,7 +8,7 @@ function FoodSearch(props) {
     const dispatch = useDispatch()
 
 
-    const { value } = useParams();
+    const { id } = useParams();
     const { foodSearch } = useSelector((state) => state.foodSearchReducer);
 
     const [searchValue, setSearchValue] = useState('');
@@ -25,8 +25,8 @@ function FoodSearch(props) {
     };
 
     useEffect(() => {
-        dispatch(getFoodSearch(value));
-    }, [dispatch, value]);
+        dispatch(getFoodSearch(id));
+    }, [dispatch, id]);
 
     return (
         <div>

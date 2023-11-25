@@ -28,12 +28,10 @@
     width: 40px;
     height: 40px;
 }
-.footerLinks_linkedin img{
+.footerLinks_git img{
     margin: 0 40px;
 }
-.footerLinks_habr img{
-    margin: 0 40px;
-    box-sizing: border-box;
-    width: 48px;
-    height: 48px;
+.footerLinks_telegram img {
+    width: 55px;
+    height: 55px;
 }

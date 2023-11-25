@@ -6,9 +6,7 @@ const Layout = () => {
     return (
         <div>
             <Header/>
-            <div>
-                <Routes/>
-            </div>
+            <Routes/>
             <Footer/>
         </div>
     );

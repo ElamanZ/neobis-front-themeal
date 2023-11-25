@@ -50,23 +50,26 @@ function FoodSearch(props) {
             </form>
 
             {
-                foodSearch && foodSearch.meals && Array.isArray(foodSearch.meals) && foodSearch.meals.map((meal, key) =>
-                    <div key={key}>
-                        <Link to={`/${meal.idMeal}`}>
-                            <div className={style.mealsBlock}>
-                                <img className={style.mealImg} src={meal.strMealThumb} alt=""/>
-                                <div>
-                                    <h3 className={style.mealTitle}>{meal.strMeal}</h3>
-                                    <p className={style.mealInfo}>{meal.strCategory} | {meal.strArea}</p>
-                                </div>
+                foodSearch && foodSearch.meals === null ? (
+                        <div>No Result</div>
+                    ) :
+                    (
+
+                        foodSearch && foodSearch.meals && Array.isArray(foodSearch.meals) && foodSearch.meals.map((meal, key) =>
+                            <div key={key}>
+                                <Link to={`/${meal.idMeal}`}>
+                                    <div className={style.mealsBlock}>
+                                        <img className={style.mealImg} src={meal.strMealThumb} alt=""/>
+                                        <div>
+                                            <h3 className={style.mealTitle}>{meal.strMeal}</h3>
+                                            <p className={style.mealInfo}>{meal.strCategory} | {meal.strArea}</p>
+                                        </div>
+                                    </div>
+                                </Link>
                             </div>
-                        </Link>
-                    </div>
-                )
+                        )
+                    )
             }
-
-
-
         </div>
     );
 }
